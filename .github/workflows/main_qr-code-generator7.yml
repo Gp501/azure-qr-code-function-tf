@@ -43,10 +43,11 @@ jobs:
         uses: Azure/functions-action@v1
         id: fa
         with:
-          app-name: 'piyush-function-qr'
-          slot-name: 'Production'
+          app-name: 'gp-function-qr'
+          slot-name: 'Dev'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_629EA65FEB9C449490D43E2E024484B2 }}
+
 
 
 
